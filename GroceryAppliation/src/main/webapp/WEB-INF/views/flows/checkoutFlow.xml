@@ -4,16 +4,24 @@
       xsi:schemaLocation="http://www.springframework.org/schema/webflow
                           http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
  
+ <view-state id="test" view="acknowledgement.jsp">
+ <transition on="re" to="ne"></transition>
+ </view-state>
 	
-	
- 
+	<view-state id="ne" view="../index.jsp"></view-state>
+ <!-- 
  
      <var name="cart" class="com.niit.GroceryBackendApp.Cart" />
+     <view-state id="start" view="flows/test"></view-state>
  
- <view-state id="start" view="details.jsp">
+ <end-state id="home" view="externalRedirect:contextRelative:/"></end-state>
+ <global-transitions>
+ <transition on="home" to="home"></transition>
+ </global-transitions>
+ <view-state id="start" view="flows/details.jsp">
         <transition on="addToCart" to="cartInfo" />
         
-    </view-state><!--  -->
+    </view-state>
   <action-state id="addCartToOrder">
         <transition on="addToCart" to="cartInfo"/>
     </action-state>
@@ -44,5 +52,5 @@
 <end-state id="cancelCheckout" view="index.jsp" />
   
  
-	
+	 -->
 </flow>

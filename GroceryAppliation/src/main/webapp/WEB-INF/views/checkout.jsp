@@ -118,7 +118,7 @@
                 <input type="hidden" name="total"  value="${srk2}" >
              
              <div class="well">
-             <label>Payment</label>
+             <label>Payment</label><br>
              <select name="payment">
     <option value="COD">Cash on Delivery</option>
     <option value="NetBanking">Net Banking</option>
@@ -126,7 +126,7 @@
                
 
   
-  
+  <div><br></div>
                 <input type="text" name="cardnum" placeholder="Enter your card number" style="width:70%"><br>
                 <br>
                 <input type="text" name="name" placeholder="Name on the card" style="margin-bottom:10px;width:70%"><br>

@@ -28,7 +28,7 @@
          <span>Please Login Before Purchase</span>
         </div>
         <div class="modal-footer">
-          <a href="home" class="btn btn-info" role="button">Click here for Login</a>
+          <a href="login" class="btn btn-info" role="button">Click here for Login</a>
         </div>
       </div>
 

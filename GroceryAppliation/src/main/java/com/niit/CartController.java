@@ -109,7 +109,7 @@ public class CartController {
 			mav.setViewName("cart");
 
 			return mav;
-		} catch (NullPointerException ex) 
+		} catch (Exception ex) 
 		{
 			mav.setViewName("loginModal");
 			return mav;
@@ -177,5 +177,13 @@ public class CartController {
 	public void addAttributes(Model model) {
 	   model.addAttribute("catList", categoryDao.retrieve());
 	} 
+	
+	
+	@RequestMapping("checkout1")
+	public String checkout(){
+		
+		return "redirect:/checkoutflow";
+		
+	}
 	
 }

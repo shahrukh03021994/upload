@@ -40,11 +40,12 @@ rel="stylesheet">
     </ul>
     <ul class="nav navbar-nav navbar-right">
     
+    <c:if test="${pageContext.request.userPrincipal.name== null}">
       <li>
-      <a href="${contextRoot}/register"><span class="glyphicon glyphicon-user"></span> Register</a>
+      <a href="${contextRoot}/register"><span class="glyphicon glyphicon-user"></span> Register</a></li>
       <li>
-      <a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span>Login</a>
-          
+      <a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+          </c:if>
            <c:if test="${pageContext.request.userPrincipal.name!= null}">
     
     <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>

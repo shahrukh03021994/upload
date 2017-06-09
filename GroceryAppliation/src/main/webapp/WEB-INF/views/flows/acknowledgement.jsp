@@ -27,9 +27,14 @@
         </section>
 
         <section class="container">
-            <p>
+          <!--   <p>
                 <a href="home" class="btn btn-default">OK</a>
-            </p>
+            </p> -->
+            
+<form method="post">
+
+<button type="submit" class="btn btn-primary" name="_eventId_re">Ok</button>
+</form>
         </section>
 
     </div>

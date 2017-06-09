@@ -20,7 +20,7 @@
             <jsp:include page="/WEB-INF/views/head.jsp"></jsp:include>
 
 	<div class="container">
-		<form  class="form-horizontal" action="${pageContext.request.contextPath}/ackAction">
+		<form  class="form-horizontal" action="checkout1">
 			<fieldset>
 			  <div class="form-group">
 							<label class="col-md-4 control-label" for="username">Customer Name</label>
@@ -53,7 +53,7 @@
 						<div class="form-group">
 							<label class="col-md-4 control-label" for="submit"></label>
 							<div class="col-md-4">
-								<button type="submit" name="invoiceClick" class="btn btn-primary">OK</button>
+								<button type="submit" name="invoiceClick" class="btn btn-primary" >OK</button>
 							</div>
 						</div>
 			</fieldset>
